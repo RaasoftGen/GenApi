@@ -1,0 +1,18 @@
+import { CashDispenserCommandName } from './CashDispenserCommandName';
+import { CheckScannerCommandName } from './CheckScannerCommandName';
+import { CoinAcceptorCommandName } from './CoinAcceptorCommandName';
+import { CoinDispenserCommaneName } from './CoinDispenserCommaneName';
+import { DepositoryCommandName } from './DepositoryCommandName';
+import { DoorCommandName } from './DoorCommandName';
+import { FingerPrintCommandName } from './FingerPrintCommandName';
+import { GuideLightCommandName } from './GuideLightCommandName';
+import { IndicatorCommandName } from './IndicatorCommandName';
+import { MixedMediaAcceptorCommandName } from './MixedMediaAcceptorCommandName';
+import { PinPadCommandName } from './PinPadCommandName';
+import { PrinterCommandName } from './PrinterCommandName';
+import { CardReaderCommandName } from './CardReaderCommandName';
+import { CardDispenserCommandName } from './CardDispenserCommandName';
+import { CameraCommandName } from './CameraCommandName';
+import { BundleCheckAcceptorCommandName } from './BundleCheckAcceptorCommandName';
+import { AuxilliariesCommandName } from './AuxilliariesCommandName';
+export type CommandName = PrinterCommandName | PinPadCommandName | MixedMediaAcceptorCommandName | IndicatorCommandName | GuideLightCommandName | FingerPrintCommandName | DoorCommandName | DepositoryCommandName | CoinDispenserCommaneName | CoinAcceptorCommandName | CheckScannerCommandName | CashDispenserCommandName | CardReaderCommandName | CardDispenserCommandName | CameraCommandName | BundleCheckAcceptorCommandName | AuxilliariesCommandName;
