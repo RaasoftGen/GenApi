@@ -1,0 +1,59 @@
+{
+  "name": "atm-device-api",
+  "version": "1.0.0",
+  "description": "ATM Device Control API - A comprehensive library for controlling ATM hardware devices",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run build:types && npm run build:rollup",
+    "build:types": "tsc",
+    "build:rollup": "rollup -c",
+    "clean": "rimraf dist",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "atm",
+    "banking",
+    "hardware",
+    "device-control",
+    "websocket",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "jsencrypt": "^3.3.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-transform-runtime": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-typescript": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@types/crypto-js": "^4.1.1",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
+    "@types/uuid": "^9.0.2",
+    "jest": "^29.6.1",
+    "rimraf": "^5.0.10",
+    "rollup": "^3.26.3",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-repo-url"
+  }
+}
